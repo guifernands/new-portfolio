@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/* --- CONFIGS GERAIS E LAYOUT --- */
+:root {
+    --bg-color: #191716;
+    --card-bg: #262321;
+    --text-primary: #e6dace;
+    --text-secondary: #9c948e;
+    --accent-color: #e09f3e;
+    --font-main: serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- HEADER & NAV --- */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.9); /* Transparência suave */
+    backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+    z-index: 1000;
+    padding: 1rem 5%;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* --- SEÇÕES --- */
+section {
+    padding: 100px 10%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1, h2, h3 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--accent-color);
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+p {
+    color: var(--text-secondary);
+    max-width: 700px;
+    font-size: 1.1rem;
+}
+
+/* --- HOME HERO --- */
+.home h1 {
+    font-size: 3.5rem;
+    background: linear-gradient(to right, var(--text-primary), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0.5rem 0;
+}
+
+.home p:first-child {
+    color: var(--accent-color);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* --- PROJETOS (GRID) --- */
+.projetos {
+    display: block; /* Remove o flex do section geral para usar grid aqui */
+    padding-top: 100px;
+}
+
+.projetos > div { /* Container dos cards (se houver um wrapper) ou direto no section */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Ajuste no HTML: Sugiro envolver os .proj-box em uma <div class="grid-container"> */
+/* Se não puder mudar o HTML, o CSS abaixo força o layout nos proj-box */
+
+.proj-box {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.05);
+    margin-bottom: 2rem; /* Caso não use grid */
+}
+
+.proj-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-color: var(--accent-color);
+}
+
+.proj-box a {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: var(--bg-color);
+    background-color: var(--accent-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: filter 0.3s;
+}
+
+.proj-box a:hover {
+    filter: brightness(1.2);
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .home h1 { font-size: 2.5rem; }
+    nav ul { flex-direction: column; text-align: center; background: var(--card-bg); position: absolute; top: 60px; right: 0; width: 100%; display: none; padding: 2rem;}
+    nav ul.active { display: flex; }
+    section { padding: 80px 5%; }
+}
