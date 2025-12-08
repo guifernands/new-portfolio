@@ -219,6 +219,8 @@ p {
     border-radius: 5px;
     font-weight: bold;
     transition: filter 0.3s;
+    text-align: center;
+    max-height: 50px;
 }
 
 .proj-box a:hover { filter: brightness(1.2); }
@@ -325,6 +327,7 @@ p {
     color: var(--accent-color);
     width: 50px;
     text-align: center;
+    transition: color 0.5s ease, transform 0.5s ease; /* transição bonitinha do email */
 }
 
 .lista-de-contatos .caixa-texto h3 {
@@ -337,12 +340,29 @@ p {
     margin: 0;
     font-size: 0.9rem;
     color: var(--text-secondary);
+    transition: color 0.5s ease; /* transição bonitinha do email */
 }
 
 .lista-de-contatos a:hover {
     background-color: #221f1d;
     border-left: 4px solid var(--accent-color);
     transform: translateX(10px);
+}
+
+.btn-copia {
+    cursor: pointer;
+}
+
+.copiado-sucesso .icone-box {
+    color: #4cd137 !important;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    transition: color 0.5s ease, transform 0.5s ease; /* transição bonitinha do email */
+}
+
+.copiado-sucesso .caixa-texto p {
+    color: #4cd137;
+    font-weight: bold;
 }
 
 
