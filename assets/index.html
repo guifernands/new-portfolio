@@ -11,24 +11,24 @@
     <header>
         <nav>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Sobre mim</a></li>
-                <li><a href="">Resumo Profissional</a></li>
-                <li><a href="">Projetos</a></li>
-                <li><a href="">Contate-me</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre-mim">Sobre mim</a></li>
+                <li><a href="#curriculo">Currículo</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contatos">Contate-me</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <article>
-            <section class="home">
+            <section class="home" id="home">
                 <p>Olá eu sou</p>
                 <h1>Guilherme Fernandes</h1>
                 <p>Desenvolvedor Front-end</p>
             </section>
 
-            <section class="sobre-mim">
+            <section class="sobre-mim" id="sobre-mim">
                 <h2>Sobre mim</h2>
                 <p>Acredito que o estudo constante é a chave para a evolução. Quando não estou aprendendo algo novo, muito provavelmente estou em meio ao caos divertido de ter cinco gatos e três cachorros. Gosto de me desafiar, seja nos jogos (apaixonado por souls like e FPS) ou tentando novas manobras no skate. Nas horas vagas nada melhor do que correr, assistir a animes, filmes e séries ou passar um bom tempo de com a família e amigos.</p>
             </section>
@@ -38,7 +38,7 @@
                 <p>Estudante de Análise e Desenvolvimento de Sistemas com um conhecimento acadêmico nos pilares da computação, Fundamentos de Redes, Sistemas Operacionais e Estrutura de Dados. Habilidades práticas em desenvolvimento web (HTML, CSS e JavaScript) e atual me aprofundando em JavaScript. Com experiência prévia em Suporte de TI, busco uma oportunidade de estágio onde eu possa aplicar meus conhecimentos e contribuir em um ambiente de desenvolvimento.</p>
             </section>
 
-            <section class="projetos">
+            <section class="projetos" id="projetos">
                 <h2>Projetos</h2>
                 <div class="proj-box">
                     <h3>Fast Fingers!</h3>
@@ -53,14 +53,14 @@
                 </div>
             </section>
 
-            <section class="curriculo-section layout-split">
+            <section class="secao-curriculo divisao-layout" id="curriculo">
                 <h2>Currículo</h2>
                 
-                <div class="split-container">
+                <div class="divisao-container">
                     <div class="col-left">
-                        <div class="cv-group">
-                            <h3 class="cv-title"><i class="fa-solid fa-graduation-cap"></i> Formação Acadêmica</h3>
-                            <div class="cv-item">
+                        <div class="grupo-cv">
+                            <h3 class="titulo-cv"><i class="fa-solid fa-graduation-cap"></i> Formação Acadêmica</h3>
+                            <div class="item-cv">
                                 <h4>Análise e Desenvolvimento de Sistemas</h4>
                                 <span class="meta">2023 - Presente | UNISINOS | 4º semestre
                                 </span>
@@ -68,19 +68,27 @@
                             </div>
                         </div>
 
-                        <div class="cv-group">
-                            <h3 class="cv-title"><i class="fa-solid fa-briefcase"></i> Experiência Profissional</h3>
-                            <div class="cv-item">
+                        <div class="grupo-cv">
+                            <h3 class="titulo-cv"><i class="fa-solid fa-briefcase"></i> Experiência Profissional</h3>
+                            <div class="item-cv">
                                 <h4>Estágio Administrativo / Suporte de TI</h4>
                                 <span class="meta">03/2025 - Presente | Ótica Popular</span>
                                 <p>Gestão de cadastros      (clientes e produtos), controle de estoque, manutenção de hardware, configuração de impressoras e rotinas administrativas.</p>
                             </div>
                         </div>
+
+                        <div class="grupo-cv">
+                            <h3 class="titulo-cv"><i class="fa-solid fa-language"></i> Idiomas</h3>
+                            <div class="item-cv">
+                                <h4>Inglês C1</h4>
+                                <p>Nível proficiente avançado na língua. Conversas de forma espontânea e compreenção de textos complexos e longos, utilização nas tarefas diárias e de forma acadêmica e profissional.</p>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col-right">
-                        <div class="cv-group">
-                            <h3 class="cv-title"><i class="fa-solid fa-code"></i> Tecnologias</h3>
+                        <div class="grupo-cv">
+                            <h3 class="titulo-cv"><i class="fa-solid fa-code"></i> Tecnologias</h3>
                             <div class="tags-container">
                                 <span class="tag">JavaScript (ES6+)</span>
                                 <span class="tag">Python</span>
@@ -92,43 +100,25 @@
                             </div>
                         </div>
 
-                        <div class="cv-group">
-                            <h3 class="cv-title"><i class="fa-solid fa-certificate"></i>Cursos</h3>
+                        <div class="grupo-cv">
+                            <h3 class="titulo-cv"><i class="fa-solid fa-certificate"></i>Cursos</h3>
                             <ul style="list-style: none; color: var(--text-secondary);">
-                                <li>• Curso de Inglês (Em andamento - atualmente C1) - BeWise Idiomas</li>
-                                <li>• Curso de JavaScript e TypeScript do básico ao avançado (Em andamento) - Luiz Otávio Miranda (Udemy)</li>
-                                <li>• Curso de Python 3 do básico ao avançado - com projetos reais (Em andamento) - Luiz Otávio Miranda (Udemy)</li>
-                                <li>• Módulo 5 de 5 HTML5 e CSS3 (Concluído) - Gustavo Guanabara (CursoemVideo)</li>
-                                <li>• Curso de JavaScript e ES6 (Concluído) - Gustavo Guanabara (CursoemVideo)</li>
-                                <li>• Curso Git e GitHub (Concluído) - Gustavo Guanabara (CursoemVideo)</li>
+                                <li><span class="destaque">•</span> Curso de Inglês (Em andamento - atualmente C1) - BeWise Idiomas</li><br>
+                                <li><span class="destaque">•</span> Curso de JavaScript e TypeScript do básico ao avançado (Em andamento) - Luiz Otávio Miranda (Udemy)</li><br>
+                                <li><span class="destaque">•</span> Curso de Python 3 do básico ao avançado - com projetos reais (Em andamento) - Luiz Otávio Miranda (Udemy)</li><br>
+                                <li><span class="destaque">•</span> Módulo 5 de 5 HTML5 e CSS3 (Concluído) - Gustavo Guanabara (CursoemVideo)</li><br>
+                                <li><span class="destaque">•</span> Curso de JavaScript e ES6 (Concluído) - Gustavo Guanabara (CursoemVideo)</li><br>
+                                <li><span class="destaque">•</span> Curso Git e GitHub (Concluído) - Gustavo Guanabara (CursoemVideo)</li><br>
                             </ul>
-                        </div>
-
-                        <div class="cv-group">
-                            <h3 class="cv-title"><i class="fa-solid fa-language"></i> Idiomas</h3>
-                            <div class="cv-item">
-                                <h4>Inglês C1</h4>
-                                <p>Nível proficiente avançado na língua. Conversas de forma espontânea e compreenção de textos complexos e longos, utilização nas tarefas diárias e de forma acadêmica e profissional.</p>
-                            </div>
                         </div>
                     </div>
                 </div>
 </section>
 
-            <section class="contate-me" id="contato">
+            <section class="contate-me" id="contatos">
                 <h2>Contate-me</h2>
                 <div class="lista-contato-pacote">
                     <ul class="lista-de-contatos">
-                        <li>
-                            <a href="https://wa.me/5551990088844" target="_blank">
-                                <div class="icone-box"><i class="fa-brands fa-whatsapp"></i></div>
-                                <div class="caixa-texto">
-                                    <h3>Whatsapp</h3>
-                                    <p>Mande uma mensagem</p>
-                                </div>
-                            </a>
-                        </li>
-
                         <li>
                             <a href="mailto:guiiilherme.fernandes@gmail.com">
                                 <div class="icone-box"><i class="fa-solid fa-envelope"></i></div>
@@ -155,6 +145,16 @@
                                 <div class="caixa-texto">
                                     <h3>GitHub</h3>
                                     <p>Confira meus repositórios</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://wa.me/5551990088844" target="_blank">
+                                <div class="icone-box"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div class="caixa-texto">
+                                    <h3>Whatsapp</h3>
+                                    <p>Mande uma mensagem</p>
                                 </div>
                             </a>
                         </li>

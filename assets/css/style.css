@@ -167,12 +167,12 @@ p {
 
 .proj-box a:hover { filter: brightness(1.2); }
 
-/* --- ESTILOS COMPARTILHADOS (Adicione ao final do seu CSS) --- */
-.curriculo-section {
+/* --- CÚRRICULO --- */
+.secao-curriculo {
     padding-bottom: 50px;
 }
 
-.cv-title {
+.titulo-cv {
     color: var(--accent-color);
     font-size: 1.3rem;
     margin-bottom: 1rem;
@@ -183,26 +183,13 @@ p {
     padding-bottom: 10px;
 }
 
-.cv-card {
-    background: var(--card-bg);
-    border: 1px solid rgba(255,255,255,0.05);
-    padding: 1.5rem;
-    border-radius: 8px;
-    transition: transform 0.3s;
-}
-
-.cv-card:hover {
-    border-color: var(--accent-color);
-    transform: translateY(-5px);
-}
-
-.cv-item h4 {
+.item-cv h4 {
     color: var(--text-primary);
     font-size: 1.1rem;
     margin-bottom: 0.2rem;
 }
 
-.cv-item .meta {
+.item-cv .meta {
     font-size: 0.85rem;
     color: var(--accent-color);
     margin-bottom: 0.5rem;
@@ -210,7 +197,7 @@ p {
     font-style: italic;
 }
 
-.cv-item p {
+.item-cv p {
     font-size: 0.95rem;
     line-height: 1.5;
 }
@@ -223,6 +210,7 @@ p {
 }
 
 .tag {
+    user-select: none;
     background: rgba(224, 159, 62, 0.1);
     color: var(--text-primary);
     padding: 5px 12px;
@@ -231,14 +219,23 @@ p {
     border: 1px solid rgba(224, 159, 62, 0.3);
 }
 
-.layout-split .split-container {
+.tag:hover {
+    transition: .7s;
+    background: rgba(224, 159, 62, 0.308);
+}
+
+.destaque {
+    color: var(--accent-color) !important;
+}
+
+.divisao-layout .divisao-container {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 4rem;
     margin-top: 2rem;
 }
 
-.cv-group { margin-bottom: 2.5rem; }
+.grupo-cv { margin-bottom: 2.5rem; }
 
 /* --- CONTATE-ME --- */
 .lista-contato-pacote {
@@ -321,5 +318,5 @@ p {
 
     .proj-box { padding: 1.5rem; }
 
-    .layout-split .split-container { grid-template-columns: 1fr; gap: 2rem; }
+    .divisao-layout .divisao-container { grid-template-columns: 1fr; gap: 2rem; }
 }
