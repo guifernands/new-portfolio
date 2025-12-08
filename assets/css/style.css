@@ -233,21 +233,21 @@ p {
 
 .layout-split .split-container {
     display: grid;
-    grid-template-columns: 1.5fr 1fr; /* Esquerda maior que direita */
+    grid-template-columns: 1.5fr 1fr;
     gap: 4rem;
     margin-top: 2rem;
 }
 
 .cv-group { margin-bottom: 2.5rem; }
 
-/* --- MODELO 3: LISTA ELEGANTE --- */
-.contact-list-wrapper {
+/* --- CONTATE-ME --- */
+.lista-contato-pacote {
     display: flex;
-    justify-content: center; /* Centraliza a lista na tela */
+    justify-content: center;
     width: 100%;
 }
 
-.contact-list {
+.lista-de-contatos {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -256,7 +256,7 @@ p {
     max-width: 600px;
 }
 
-.contact-list a {
+.lista-de-contatos a {
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -268,26 +268,26 @@ p {
     transition: 0.3s ease;
 }
 
-.contact-list .icon-box {
+.lista-de-contatos .icone-box {
     font-size: 2rem;
     color: var(--accent-color);
     width: 50px;
     text-align: center;
 }
 
-.contact-list .text-box h3 {
+.lista-de-contatos .caixa-texto h3 {
     margin: 0;
     font-size: 1.2rem;
     color: var(--text-primary);
 }
 
-.contact-list .text-box p {
+.lista-de-contatos .caixa-texto p {
     margin: 0;
     font-size: 0.9rem;
     color: var(--text-secondary);
 }
 
-.contact-list a:hover {
+.lista-de-contatos a:hover {
     background-color: #221f1d;
     border-left: 4px solid var(--accent-color);
     transform: translateX(10px);
