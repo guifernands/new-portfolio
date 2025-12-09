@@ -71,3 +71,22 @@ function typeEffectHtml() {
 
         setTimeout(typeEffect, veloDigitacao);
 }}
+
+/* --- Scroll Reveal (fade in) */
+ScrollReveal({
+    reset: false, /* fade in sem repetição */
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+
+
+ScrollReveal().reveal('.home-conteudo, .titulo-cv', { origin: 'top' });
+
+ScrollReveal().reveal('.home-img, .projetos, .lista-contato-pacote', { origin: 'bottom' });
+
+ScrollReveal().reveal('.home-conteudo h1, .sobre-mim img', { origin: 'left' });
+
+ScrollReveal().reveal('.home-conteudo p, .sobre-mim-content', { origin: 'right' });
+
+ScrollReveal().reveal('.proj-box', { interval: 200 });
