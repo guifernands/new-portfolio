@@ -1,3 +1,4 @@
+/* --- copia email --- */
 copiaEmail();
 
 function copiaEmail() {
@@ -31,3 +32,42 @@ function copiaEmail() {
         });
     });
 }
+
+/* -- typewriter effect -- */
+typeEffectHtml();
+
+function typeEffectHtml() {
+    const elementoTexto = document.querySelector('.digitando-texto');
+    const texts = ['Front-end', 'JavaScript', 'React (Estudando)'];
+
+    let textoIndice = 0;
+    let charIndice = 0;
+    let apagando = false;
+
+    typeEffect();
+
+    function typeEffect() {
+        
+        const textoAtual = texts[textoIndice];
+
+        if (apagando) {
+            elementoTexto.textContent = textoAtual.substring(0, charIndice - 1);
+            charIndice--;
+        } else {
+            elementoTexto.textContent = textoAtual.substring(0, charIndice + 1);
+            charIndice++;
+        }
+
+        let veloDigitacao = apagando ? 100 : 200;
+
+        if (!apagando && charIndice === textoAtual.length) {
+            veloDigitacao = 2000; 
+            apagando = true;
+        } else if (apagando && charIndice === 0) {
+            apagando = false;
+            textoIndice = (textoIndice + 1) % texts.length;
+            veloDigitacao = 500;
+        }
+
+        setTimeout(typeEffect, veloDigitacao);
+}}

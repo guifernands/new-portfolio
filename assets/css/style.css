@@ -167,6 +167,26 @@ p {
     margin: 0.5rem 0;
 }
 
+/* --- typewriter ---  */
+.digitando-texto {
+    color: var(--accent-color);
+    font-weight: 600;
+    position: relative;
+}
+
+.digitando-texto::after {
+    content: "|";
+    position: absolute;
+    right: -5px;
+    color: var(--text-primary);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 /* --- PROJETOS (GRID) --- */
 .projetos {
     display: block;
@@ -418,7 +438,7 @@ p {
     transform: translateY(-3px);
 }
 
-/* --- botão fixo --- */
+/* --- botão fixo na tela com ajuda de IA --- */
 .btn-flutuando-cv {
     position: fixed;
     bottom: 30px;
@@ -433,10 +453,10 @@ p {
     align-items: center;
     font-size: 1.5rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-    z-index: 9999; /* Garante que fique acima de tudo */
+    z-index: 9999;
     text-decoration: none;
     transition: all 0.3s ease;
-    animation: pulse 3s infinite; /* Chama a animação abaixo */
+    animation: pulse 3s infinite;
 }
 
 .btn-flutuando-cv:hover {
