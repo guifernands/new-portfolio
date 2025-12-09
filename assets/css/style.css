@@ -230,6 +230,32 @@ p {
     padding-bottom: 50px;
 }
 
+.cv-container {
+    margin-bottom: 2rem;
+}
+
+.btn-padrao {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn-padrao:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px rgba(224, 159, 62, 0.4);
+    transform: translateY(-3px);
+}
+
 .titulo-cv {
     color: var(--accent-color);
     font-size: 1.3rem;
@@ -364,6 +390,8 @@ p {
     color: #4cd137;
     font-weight: bold;
 }
+
+
 
 
 
