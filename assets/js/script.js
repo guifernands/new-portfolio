@@ -96,11 +96,10 @@ const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('nav ul');
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('fa-xmark'); // Troca o ícone de bars para X (se usar fontawesome atualizado)
+    menuIcon.classList.toggle('fa-xmark'); 
     navbar.classList.toggle('active');
 };
 
-// Fechar o menu ao clicar em um link (boa prática de UX)
 navbar.onclick = () => {
     menuIcon.classList.remove('fa-xmark');
     navbar.classList.remove('active');
