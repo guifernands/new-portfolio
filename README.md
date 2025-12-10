@@ -12,7 +12,7 @@ O objetivo foi criar uma interface "Dark Mode" elegante, que destaca os projetos
 
 - **Design Responsivo:** Adaptável para Celulares, Tablets e Desktops.
 - **Animações:** Efeito de digitação (Typewriter) e Scroll Reveal.
-- **Interatividade:** Botão de cópia de e-mail com feedback visual e menu mobile funcional.
+- **Interatividade:** Botão de cópia de e-mail com feedback visual.
 - **Download de CV:** Botão flutuante e seção dedicada para baixar o currículo.
 
 ---
