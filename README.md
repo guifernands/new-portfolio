@@ -24,7 +24,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - **HTML5** (Semântico)
 - **CSS3** (Variáveis, Flexbox, Grid e Media Queries)
 - **JavaScript** (ES6+, Manipulação de DOM)
-- **Bibliotecas:** - [ScrollReveal](https://scrollrevealjs.org/) (Animações ao rolar), [FontAwesome](https://fontawesome.com/) (Ícones)
+- **Bibliotecas:** [ScrollReveal](https://scrollrevealjs.org/) (Animações ao rolar), [FontAwesome](https://fontawesome.com/) (Ícones)
 
 ---
 
