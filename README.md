@@ -29,7 +29,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
-## 🚀 Como visualizar
+##  🎯 Visualizar Portfólio
 
 Você pode acessar o projeto online através do link:
 **[Acesse o Portfólio Aqui](https://guifernands.github.io/)**
