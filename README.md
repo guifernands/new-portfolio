@@ -33,11 +33,3 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Você pode acessar o projeto online através do link:
 **[Acesse o Portfólio Aqui](https://guifernands.github.io/)**
-
-Ou clonar o repositório para sua máquina:
-
-```bash
-# Clone este repositório
-$ git clone [https://github.com/guifernands/nome-do-repo.git](https://github.com/guifernands/nome-do-repo.git)
-
-# Abra o arquivo index.html no seu navegador
